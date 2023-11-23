@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 6,
+    "pending": 1,
+    "failures": 0,
+    "start": "2023-11-13T03:17:14.516Z",
+    "end": "2023-11-13T03:20:49.366Z",
+    "duration": 214850,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 14.285714285714285,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "483b71c7-ea0a-4899-be29-28d20195d501",
+      "title": "",
+      "fullFile": "cypress/e2e/2.test-contact-details.cy.js",
+      "file": "cypress/e2e/2.test-contact-details.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eef3e356-1293-4549-8231-797ed4eda7af",
+          "title": "User Story 2 – Contact Details Section",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AC1: should contain inputs for Main Contact Person and Letter of Offeree",
+              "fullTitle": "User Story 2 – Contact Details Section AC1: should contain inputs for Main Contact Person and Letter of Offeree",
+              "timedOut": null,
+              "duration": 31895,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const contactDetailsPage = Cypress.require(\"../pages/contactDetailsPage\");\n  contactDetailsPage.verifyMainContactPersonFields();\n});",
+              "err": {},
+              "uuid": "a51ef298-5adf-47bc-8edf-baf36ae12e5d",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC2: should auto-populate Mailing Address using external API",
+              "fullTitle": "User Story 2 – Contact Details Section AC2: should auto-populate Mailing Address using external API",
+              "timedOut": null,
+              "duration": 32533,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const contactDetailsPage = Cypress.require(\"../pages/contactDetailsPage\");\n  contactDetailsPage.fillPostalCodeAndSearch();\n  contactDetailsPage.verifyAutoPopulatedMailingAddress();\n});",
+              "err": {},
+              "uuid": "21f13eee-66bd-45c1-8ea9-b9a64e775dbe",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC3: should auto-populate Mailing Address from Company Profile",
+              "fullTitle": "User Story 2 – Contact Details Section AC3: should auto-populate Mailing Address from Company Profile",
+              "timedOut": null,
+              "duration": 34869,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const contactDetailsPage = Cypress.require(\"../pages/contactDetailsPage\");\n  contactDetailsPage.clickAddressAsCompanyProfile();\n  contactDetailsPage.verifyAutoPopulatedMailingAddressFromCompanyProfile();\n});",
+              "err": {},
+              "uuid": "4ee9dd57-03a0-4fb1-83f6-9c19f40537a8",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC4: should contain inputs for Letter of Offeree",
+              "fullTitle": "User Story 2 – Contact Details Section AC4: should contain inputs for Letter of Offeree",
+              "timedOut": null,
+              "duration": 36007,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const contactDetailsPage = Cypress.require(\"../pages/contactDetailsPage\");\n  contactDetailsPage.verifyLetterofOffereeFields();\n});",
+              "err": {},
+              "uuid": "876fb1af-cf88-4392-9a77-41a22317e343",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC5: should populate Letter of Offeree from Main Contact Person",
+              "fullTitle": "User Story 2 – Contact Details Section AC5: should populate Letter of Offeree from Main Contact Person",
+              "timedOut": null,
+              "duration": 39026,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const contactDetailsPage = Cypress.require(\"../pages/contactDetailsPage\");\n  const data = contactDetailsPage.fillMainContactPersonDetails();\n  contactDetailsPage.clickLetterofOffereeMainPerson();\n  contactDetailsPage.verifyAutoPopulatedLetterofOffereeAddressee(data);\n});",
+              "err": {},
+              "uuid": "0da62455-f0ea-4fd8-9eac-d73b471d2672",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC6: should save applicant inputs and reload saved values on refresh",
+              "fullTitle": "User Story 2 – Contact Details Section AC6: should save applicant inputs and reload saved values on refresh",
+              "timedOut": null,
+              "duration": 39056,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const contactDetailsPage = Cypress.require(\"../pages/contactDetailsPage\");\n  const personData = contactDetailsPage.fillMainContactPersonDetails();\n  contactDetailsPage.clickAddressAsCompanyProfile();\n  const loaAData = contactDetailsPage.fillLetterOfOfferAddresseeDetails();\n  contactDetailsPage.save();\n  cy.reload();\n  contactDetailsPage.verifyDataSaved(personData, loaAData);\n});",
+              "err": {},
+              "uuid": "0e65ca65-1789-4a51-b0e0-c9bab63ca4f4",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw error for invalid postcode search and address details should not be auto populated",
+              "fullTitle": "User Story 2 – Contact Details Section should throw error for invalid postcode search and address details should not be auto populated",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "2a0e51c3-14dc-4a8b-bd9b-3ac96f4eb380",
+              "parentUUID": "eef3e356-1293-4549-8231-797ed4eda7af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a51ef298-5adf-47bc-8edf-baf36ae12e5d",
+            "21f13eee-66bd-45c1-8ea9-b9a64e775dbe",
+            "4ee9dd57-03a0-4fb1-83f6-9c19f40537a8",
+            "876fb1af-cf88-4392-9a77-41a22317e343",
+            "0da62455-f0ea-4fd8-9eac-d73b471d2672",
+            "0e65ca65-1789-4a51-b0e0-c9bab63ca4f4"
+          ],
+          "failures": [],
+          "pending": [
+            "2a0e51c3-14dc-4a8b-bd9b-3ac96f4eb380"
+          ],
+          "skipped": [],
+          "duration": 213386,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

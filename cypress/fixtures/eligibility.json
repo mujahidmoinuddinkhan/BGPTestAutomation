@@ -1,0 +1,11 @@
+{
+    "questions" :[
+        "Is the applicant registered in Singapore?", 
+        "Is the applicant's group sales turnover less than or equal to S$100m or is the applicant's group employment size less than or equal to 200?", 
+        "Does the applicant have at least 30%",
+        "that you are applying for a new market? A market is considered new if your company's revenue from there has not exceeded $100,000 in any of the last 3 years.",
+        "the following statements true for this project?"
+],
+    "warningMessage" : "The applicant may not meet the eligibility criteria for this grant.",
+    "faqUrl" : "https://www.gobusiness.gov.sg/business-grants-portal-faq/get-a-grant/"
+}

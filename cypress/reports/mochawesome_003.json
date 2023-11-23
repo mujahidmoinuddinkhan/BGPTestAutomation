@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-13T03:14:11.782Z",
+    "end": "2023-11-13T03:17:13.599Z",
+    "duration": 181817,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fa173533-b5c4-43f0-9af7-58976388e93b",
+      "title": "",
+      "fullFile": "cypress/e2e/1.test-eligibility-section.cy.js",
+      "file": "cypress/e2e/1.test-eligibility-section.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bfa76ab6-6b4d-484d-8166-1992ba5322a4",
+          "title": "User Story 1 – Eligibility Section",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "AC 1: should display all eligibility questions",
+              "fullTitle": "User Story 1 – Eligibility Section AC 1: should display all eligibility questions",
+              "timedOut": null,
+              "duration": 31989,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const eligibilityPage = Cypress.require(\"../pages/eligibilityPage\");\n  eligibilityPage.verifyEligibilityQuestions();\n});",
+              "err": {},
+              "uuid": "1279b012-d632-4e4e-80f9-06e89b279ba9",
+              "parentUUID": "bfa76ab6-6b4d-484d-8166-1992ba5322a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC 2: should allow answering questions with Yes or No",
+              "fullTitle": "User Story 1 – Eligibility Section AC 2: should allow answering questions with Yes or No",
+              "timedOut": null,
+              "duration": 35359,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const eligibilityPage = Cypress.require(\"../pages/eligibilityPage\");\n  eligibilityPage.verifyYesNoDisplayed();\n  eligibilityPage.selectAllYes();\n});",
+              "err": {},
+              "uuid": "cec95b69-2872-497b-a591-a4ef1f1b72aa",
+              "parentUUID": "bfa76ab6-6b4d-484d-8166-1992ba5322a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC 3: should display a warning message on selecting \"No\"",
+              "fullTitle": "User Story 1 – Eligibility Section AC 3: should display a warning message on selecting \"No\"",
+              "timedOut": null,
+              "duration": 37929,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const eligibilityPage = Cypress.require(\"../pages/eligibilityPage\");\n  eligibilityPage.selectAllNo();\n  eligibilityPage.verifyWarningMessage();\n});",
+              "err": {},
+              "uuid": "11c3651e-078c-4fc1-a4fd-a2addf462d9c",
+              "parentUUID": "bfa76ab6-6b4d-484d-8166-1992ba5322a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC 4: should navigate to the FAQ page on clicking the link",
+              "fullTitle": "User Story 1 – Eligibility Section AC 4: should navigate to the FAQ page on clicking the link",
+              "timedOut": null,
+              "duration": 35471,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const eligibilityPage = Cypress.require(\"../pages/eligibilityPage\");\n  eligibilityPage.selectAllNo();\n  eligibilityPage.save();\n  eligibilityPage.clickFAQ();\n});\ncy.origin('https://www.gobusiness.gov.sg', () => {\n  const eligibilityPage = Cypress.require(\"../pages/eligibilityPage\");\n  eligibilityPage.verifyFAQ();\n});",
+              "err": {},
+              "uuid": "cddd606e-ca82-419e-99f5-f83cfb211118",
+              "parentUUID": "bfa76ab6-6b4d-484d-8166-1992ba5322a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "AC 5: should save applicant inputs and reload saved values on refresh",
+              "fullTitle": "User Story 1 – Eligibility Section AC 5: should save applicant inputs and reload saved values on refresh",
+              "timedOut": null,
+              "duration": 39170,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.origin(baseUrl, () => {\n  const eligibilityPage = Cypress.require(\"../pages/eligibilityPage\");\n  eligibilityPage.selectAllYes();\n  eligibilityPage.save();\n  cy.reload();\n  eligibilityPage.verifyDataSaved();\n});",
+              "err": {},
+              "uuid": "1ff4dfc7-c691-4e51-bda5-55b15bf03258",
+              "parentUUID": "bfa76ab6-6b4d-484d-8166-1992ba5322a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1279b012-d632-4e4e-80f9-06e89b279ba9",
+            "cec95b69-2872-497b-a591-a4ef1f1b72aa",
+            "11c3651e-078c-4fc1-a4fd-a2addf462d9c",
+            "cddd606e-ca82-419e-99f5-f83cfb211118",
+            "1ff4dfc7-c691-4e51-bda5-55b15bf03258"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 179918,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

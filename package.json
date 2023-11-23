@@ -1,0 +1,23 @@
+{
+  "name": "BGPTestAutomation",
+  "description": "",
+  "main": "`index`.js",
+  "scripts": {
+    "cy-open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "cypress:report": "npm run cypress:merge && marge cypress/reports/report.json --reportDir cypress/reports",
+    "test": "npm run cypress:run && npm run cypress:report",
+    "cypress:run:chrome:headed": "cypress run --headed --browser chrome",
+    "cypress:run:tags": "cypress run --headed --browser chrome --env TAGS='@abc'",
+    "cypress:run:interactive": "cypress open --browser chrome"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "cypress": "^13.4.0",
+    "cypress-file-upload": "^5.0.8",
+    "marge": "^1.0.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0"
+  }
+}

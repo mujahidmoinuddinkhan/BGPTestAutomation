@@ -1,0 +1,9 @@
+User Story 1 - Eligibility Section
+
+Test Scenarios:
+
+Verify that all five eligibility questions are displayed on the Eligibility page.
+Verify that each question can be answered with "Yes" or "No" using radio buttons.
+Verify that answering "No" to any question displays a warning message.
+Verify that clicking the link in the warning message launches the FAQ page.
+Verify that clicking "Save" saves the applicant's inputs, and refreshing the page reloads the saved values.

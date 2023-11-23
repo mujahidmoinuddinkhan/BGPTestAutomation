@@ -1,0 +1,10 @@
+User Story 3 (EPIC) - Form Submission
+
+Test Scenarios:
+
+Verify that after filling all mandatory fields in all form sections, clicking "Review" takes the applicant to a read-only summary page.
+Verify that missing mandatory inputs trigger validation errors and redirect to the section with missing details.
+Verify that the read-only summary page contains all previously filled details.
+Verify that checking the "Consent and Acknowledgement" checkbox allows submission and displays a success message.
+Verify that the success message includes an Application Ref ID and the receiving Agency is 'Enterprise Singapore.'
+Verify that upon submission, the application is shown under the 'Processing' tab on the 'My Grants' dashboard.

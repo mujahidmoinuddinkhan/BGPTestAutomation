@@ -1,0 +1,9 @@
+User Story 2 - Contact Details Section
+
+Test Scenarios:
+
+Verify that the Contact Details page contains inputs for the Main Contact Person and Letter of Offeree.
+Verify that Mailing Address input auto-populates "Blk/Hse No." and "Street details" from an external API.
+Verify that the "Same as registered address in Company Profile" checkbox auto-populates Mailing Address.
+Verify that the "Same as main contact person" option populates Letter of Offeree details.
+Verify that clicking "Save" saves the applicant's inputs and reloading the page reloads the saved values.
